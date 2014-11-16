@@ -1,0 +1,18 @@
+How to compile Graph500 in Windows/MinGW?
+=========================================
+
+Purpose
+-------
+
+Run in Windows, in some cases.
+
+Method
+------
+
+1. Get [mman win32 wrapper](http://mman-win32.googlecode.com/) 
+2. Change <sys/mman.h> to local, native "mman.h" (in xalloc.c)
+3. Change <alloca.h> to <malloc.h> (in graph500.c, make-edgelist.c)
+4. remove '-lrt' from make.inc
+5. make & enjoy~
+
+Zhan @ Nov 2014

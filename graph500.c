@@ -10,7 +10,8 @@
 
 #include <assert.h>
 
-#include <alloca.h> /* Portable enough... */
+/* #include <alloca.h> */
+#include <malloc.h>
 #include <fcntl.h>
 /* getopt should be in unistd.h */
 #include <unistd.h>

@@ -12,7 +12,8 @@
 #include <time.h>
 #include <fcntl.h>
 #include <sys/types.h>
-#include <sys/mman.h>
+/* #include <sys/mman.h> */
+#include "mman/mman.h"
 
 #if defined(HAVE_LIBNUMA)
 #include <numa.h>
